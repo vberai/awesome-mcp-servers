@@ -38,7 +38,6 @@ jobs:
           curl --proto '=https' --tlsv1.2 -LsSf https://github.com/cncf/landscape2/releases/download/v1.1.0/landscape2-installer.sh | sh
           npm install
           npm run build-landscape
-          npm run serve-landscape
       - name: Upload build folder
         uses: actions/upload-pages-artifact@v3
         with:
